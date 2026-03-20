@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Quiz Page</title>
+  </head>
+  <body class="flex items-center justify-center h-screen">
+    <div
+      class="border-3 border-black w-[580px] rounded-[18px] py-[40px] px-[44px] flex flex-col gap-4"
+    >
+      <h1 class="text-2xl font-bold text-center" id="welcome-text"></h1>
+      <h3 class="text-[#1e3a8a] font-bold text-xl" id="question">
+        What is the capital of France
+      </h3>
+     
+      <div id="options" class="flex flex-col gap-2">
+
+      </div>
+
+    </div>
+    <script src="../../contents/questions.js">
+    </script>
+    <script src="./quiz.js"></script>
+  </body>
+</html>

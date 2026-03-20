@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>QuizzyWizzy</title>
+  </head>
+  <body class="flex items-center justify-center h-screen">
+    <div
+      class="border-3 border-black w-[580px] rounded-[18px] py-[40px] px-[44px] flex flex-col gap-4"
+    >
+      <h1 class="text-xl font-bold text-center">QuizzyWizzy</h1>
+      <h4 class="text-lg font-semibold text-center">Welcome to QuizzyWizzy</h4>
+
+      <p>Enter your name to continue</p>
+      <input
+        id="name"
+        type="text"
+        name="name"
+        placeholder="Enter your username"
+        autocomplete="name"
+        class="border-2 border-black rounded-xl p-2"
+      />
+      <button
+        onclick="continueQuiz()"
+        class="bg-black text-white w-full p-3 rounded-xl cursor-pointer disabled:opacity-1"
+      >
+        Continue
+      </button>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
